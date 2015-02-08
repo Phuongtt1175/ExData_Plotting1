@@ -5,7 +5,7 @@ extractData <- function(filename = "household_power_consumption.txt")
   
   #Read file to memory
   columnClasses=c('character', 'character', 'numeric', 'numeric', 'numeric', 'numeric','numeric', 'numeric', 'numeric')
-  dat <- read.table(filename,sep=";",header=TRUE,colClasses=columnClasses,na="?")
+  dat <- read.table(filename,sep=";",header=TRUE,colClasses=columnClasses,na.strings="?")
   
 
   
